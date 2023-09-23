@@ -24,10 +24,14 @@ body {
 
 .main {
     background-color: var(--Light-Grayish-Cyan);
+}
+
+.app {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4rem;
+    padding: 4rem 12rem;
+    gap: 2rem;
 }
 
 
@@ -42,19 +46,19 @@ header {
 /* containers */
 .container {
     display: flex;
+    width: 100%;
     justify-content: space-between;
-    width: 70vw;
     background-color: white;
     align-items: center;
     padding: 2rem;
     border-radius: .5rem;
-
+    box-shadow: 0 0 10px 5px hsla(180, 29%, 50%, .2);
 }
 
 .info {
     display: flex;
     align-items: center;
-    gap: var(--gap)
+    gap: 2rem;
 }
 
 .company-container {
@@ -68,7 +72,7 @@ header {
     margin: 0;
 }
 
-#new {
+.tag-new {
     color: white;
     font-size: .8rem;
     background-color: var(--Desaturated-Dark-Cyan);
@@ -77,16 +81,17 @@ header {
     text-transform: uppercase;
 }
 
-#featured {
+.tag-featured {
     color: white;
     font-size: .8rem;
-    background-color: black;
+    background-color: var(--Very-Dark-Grayish-Cyan);
     padding: .3rem 0.5rem .2rem .5rem;
     border-radius: .8rem;
     text-transform: uppercase;
 }
 
 .position-name-wrapper h1 {
+    color: var(--Very-Dark-Grayish-Cyan);
     font-size: 1.2rem;
     color: black;
     cursor: pointer;
@@ -141,6 +146,7 @@ header {
     width: 70vw;
     height: 8vh;
     border-radius: .5rem;
+    box-shadow: 0 0 10px 5px hsla(180, 29%, 50%, .2);
 }
 
 button {
@@ -155,7 +161,7 @@ button:hover {
 
 /* JAVASCRIPT CLASSES */
 .featured {
-    border-left: 5px solid var(--Very-Dark-Grayish-Cyan);
+    border-left: 5px solid var(--Desaturated-Dark-Cyan);
 }
 
 .tag-appended {
@@ -188,6 +194,6 @@ button:hover {
     background-color: var(--Very-Dark-Grayish-Cyan);
 }
 
-/* .hidden {
+.hidden {
     display: none;
-} */
+}
